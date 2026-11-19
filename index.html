@@ -3,484 +3,213 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Restova | وقّف الهدر والسرقة في مخزون مطعمك</title>
-<meta name="description" content="إدارة مخزون ذكية، توقع مبيعات بالـ AI، وتجربة أسهل لعميل المطعم.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%230A1A3C'/%3E%3Ctext x='24' y='35' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='32' fill='%23D4AF5A'%3ER%3C/text%3E%3C/svg%3E">
+<title>Restova | اعرف خسايرك في المخزون قبل ما تكبر</title>
+<meta name="description" content="Restova منصة ذكية لإدارة المطاعم والكافيهات: بتكشف سرقة وتلف وهدر المخزون. ابدأ بـ 1000 جنيه في الشهر لأول 3 شهور.">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-:root{
-  --navy:#0A1A3C; --navy2:#14295C; --blue:#A8832C; --sky:#F6F0DF; --bg:#F8F6F1; --white:#fff;
-  --text:#0A1A3C; --muted:#5E6577; --line:#E6E0D2;
-  --gold:#D4AF5A; --gold-d:#B97800; --red:#E5484D; --red-bg:#FDECEC; --green:#12A66A;
-  --wa:#1FAF5A; --wa-d:#16924A;
-  --font:"Cairo","Segoe UI",Tahoma,Arial,sans-serif;
-  --shadow:0 10px 30px rgba(10,26,60,.10);
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.8;font-size:17px;
-  padding-bottom:calc(78px + env(safe-area-inset-bottom,0px));-webkit-text-size-adjust:100%}
-svg{display:block}
-.ic{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
-.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-section{padding:64px 0}
-h1,h2,h3{line-height:1.35;font-weight:800}
-h1{font-size:clamp(30px,6.4vw,50px)}
-h2{font-size:clamp(24px,4.6vw,36px)}
-h3{font-size:18px}
-p{max-width:66ch}
-.ltr{direction:ltr;unicode-bidi:isolate;display:inline}
-.sec-head{max-width:720px;margin-bottom:34px}
-.sec-head p{color:var(--muted);margin-top:10px;font-size:18px}
-.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);
-  color:#E8DDBF;padding:6px 14px;border-radius:99px;font-size:14px;font-weight:600;margin-bottom:18px}
-.badge i{width:8px;height:8px;border-radius:50%;background:var(--gold)}
-
-/* Buttons */
-.cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--wa);color:#fff;font-family:var(--font);
-  font-weight:800;font-size:18px;text-decoration:none;padding:14px 28px;min-height:54px;border-radius:12px;
-  box-shadow:0 8px 22px rgba(31,175,90,.35);transition:transform .15s,background .15s}
-.cta:hover{background:var(--wa-d);transform:translateY(-2px)}
-.cta:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-.cta svg{width:22px;height:22px;fill:currentColor}
-.micro{font-size:14px;color:#B9C0D2;margin-top:12px}
-
-.brand{display:inline-block;direction:ltr;text-decoration:none;color:#fff;font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;font-weight:700;font-size:36px;letter-spacing:2px;line-height:1.1}
-.brand::after{content:"";display:block;height:2px;width:44%;background:var(--gold);margin-top:4px}
-footer .brand{font-size:28px;margin-bottom:12px}
-.topbar{padding-top:20px;padding-bottom:6px}
-.hero{padding-top:0!important}
-/* Hero */
-.hero{background:radial-gradient(900px 500px at 85% -10%,rgba(212,175,90,.15) 0%,transparent 60%),linear-gradient(160deg,var(--navy) 0%,#0C1D45 100%);
-  color:#fff;padding:44px 0 72px;overflow:hidden}
-.hero .grid{display:grid;gap:40px;align-items:center}
-.hero h1 .hl{color:var(--gold)}
-.hero .lead{font-size:18px;color:#C8CEDC;margin:16px 0 26px}
-.points{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:22px;font-size:15px;color:#E6E9F1}
-.points span{display:flex;align-items:center;gap:6px}
-.points .ic{width:18px;height:18px;color:var(--gold)}
-
-/* Dashboard mock */
-.dash{background:#fff;color:var(--text);border-radius:18px;box-shadow:0 30px 60px rgba(0,0,0,.35);overflow:hidden}
-.dash .bar{display:flex;align-items:center;gap:6px;padding:12px 16px;background:#F1EEE6;border-bottom:1px solid var(--line)}
-.dash .bar i{width:10px;height:10px;border-radius:50%;background:#D9D3C4}
-.dash .bar b{margin-inline-start:auto;font-size:12px;color:var(--muted);font-weight:600}
-.dash .body{padding:18px}
-.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.kpi{background:var(--bg);border-radius:10px;padding:10px;font-size:12.5px;color:var(--muted);line-height:1.4}
-.kpi strong{display:block;color:var(--text);font-size:14px;margin-top:3px}
-.kpi.warn strong{color:var(--red)}
-.chart{margin-top:16px;border:1px solid var(--line);border-radius:12px;padding:14px}
-.chart h4{font-size:14px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;gap:8px}
-.legend{display:flex;gap:12px;font-size:12px;color:var(--muted);font-weight:600}
-.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-inline-end:5px}
-.bars{display:flex;align-items:flex-end;gap:14px;height:120px;padding-top:6px}
-.bars div{flex:1;display:flex;align-items:flex-end;gap:4px;height:100%}
-.bars span{flex:1;border-radius:5px 5px 0 0}
-.alert{margin-top:14px;display:flex;gap:10px;align-items:center;background:var(--red-bg);color:#B42318;border-radius:10px;padding:10px 12px;font-size:14px;font-weight:700}
-.alert .ic{width:20px;height:20px}
-.note-ill{font-size:12px;color:#8E98AE;margin-top:10px;text-align:center}
-
-/* Strip */
-.strip{background:#fff;border-bottom:1px solid var(--line);padding:0}
-.strip .wrap{display:grid;gap:0}
-.strip div{display:flex;gap:12px;align-items:center;padding:18px 4px;border-bottom:1px solid var(--line);font-weight:700}
-.strip div:last-child{border-bottom:0}
-.strip .ic{color:var(--blue);width:28px;height:28px}
-
-/* Cards */
-.grid-c{display:grid;gap:16px}
-.card{background:#fff;border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:16px;padding:22px;box-shadow:var(--shadow)}
-.card .ico{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:var(--sky);color:var(--blue);margin-bottom:14px}
-.card p{color:var(--muted);font-size:16px}
-.pain{background:var(--navy);color:#fff}
-.pain .sec-head p{color:#BFC6D6}
-.pain .card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12);box-shadow:none}
-.pain .card p{color:#C8CEDC}
-.pain .card .ico{background:rgba(229,72,77,.18);color:#FF8A8E}
-.pain .closing{margin-top:26px;font-size:20px;font-weight:800;color:var(--gold)}
-
-/* Two sides */
-.sides{display:grid;gap:20px}
-.side{border-radius:20px;padding:26px;border:1px solid var(--line);background:#fff;box-shadow:var(--shadow)}
-.side.mgmt{background:linear-gradient(160deg,var(--navy),var(--navy2));color:#fff;border:0}
-.side ul{list-style:none;margin-top:16px;display:grid;gap:10px}
-.side li{display:flex;gap:10px;align-items:flex-start;font-size:16px}
-.side li .ic{width:20px;height:20px;margin-top:5px;color:var(--green)}
-.side.mgmt li .ic{color:var(--gold)}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
-.chip{padding:6px 14px;border-radius:99px;border:1px solid var(--line);font-size:14px;font-weight:600;background:var(--bg)}
-.chip.on{background:var(--gold);border-color:var(--gold);color:var(--navy)}
-
-/* Feature table */
-details.all{margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}
-details.all>summary{cursor:pointer;font-weight:800;padding:18px 22px;list-style:none;display:flex;justify-content:space-between}
-details.all>summary::after{content:"+";font-size:24px;color:var(--blue);line-height:1}
-details.all[open]>summary::after{content:"\2212"}
-.tw{overflow-x:auto}
-table{border-collapse:collapse;width:100%;min-width:560px;font-size:15.5px}
-th,td{padding:13px 18px;text-align:start;border-top:1px solid var(--line);vertical-align:top}
-th{background:var(--sky);font-weight:800;border-top:0}
-td:first-child{font-weight:700;width:36%}
-td:last-child{color:var(--muted)}
-
-/* Steps */
-.steps{list-style:none;display:grid;gap:16px;counter-reset:s}
-.steps li{counter-increment:s;position:relative;background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 22px 22px 22px;padding-right:78px;box-shadow:var(--shadow)}
-.steps li::before{content:counter(s);position:absolute;right:20px;top:20px;width:42px;height:42px;border-radius:12px;background:var(--navy);
-  color:var(--gold);font-weight:800;font-size:20px;display:grid;place-items:center}
-.steps p{color:var(--muted);font-size:16px}
-.todo{display:block;margin-top:8px;background:#FFF6E0;border:1px dashed var(--gold);color:#7A5200;border-radius:8px;padding:6px 10px;font-size:14px}
-
-/* Compare */
-.cmp{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
-.cmp table{min-width:520px}
-.cmp th:nth-child(2),.cmp td:nth-child(2){background:#FAF4E3;text-align:center}
-.cmp th:nth-child(3),.cmp td:nth-child(3){text-align:center}
-.cmp td:first-child{width:auto}
-.yes{color:var(--green);font-weight:800;font-size:20px}
-.q{color:var(--muted)!important}
-.diff{margin-top:20px;background:var(--navy);color:#fff;border-radius:16px;padding:20px 24px;font-size:17px}
-.diff strong{color:var(--gold)}
-
-/* Pricing */
-.price{display:grid;gap:18px;align-items:stretch}
-.plan{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:var(--shadow);position:relative}
-.plan.full{background:linear-gradient(160deg,var(--navy),var(--navy2));color:#fff;border:0}
-.plan .tag{position:absolute;top:-14px;right:24px;background:var(--gold);color:var(--navy);font-weight:800;font-size:13px;padding:4px 14px;border-radius:99px}
-.amt{font-size:42px;font-weight:800;line-height:1.2;margin:8px 0 4px}
-.amt small{font-size:17px;font-weight:600;opacity:.8}
-.plan ul{list-style:none;margin:16px 0 0;display:grid;gap:10px}
-.plan li{display:flex;gap:10px;align-items:flex-start;font-size:16px}
-.plan li .ic{width:20px;height:20px;margin-top:5px;color:var(--green)}
-.plan.full li .ic{color:var(--gold)}
-.perday{margin-top:26px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 20px;font-weight:700}
-
-
-.offer{display:grid;gap:14px;background:linear-gradient(135deg,#14295C,#0A1A3C);color:#fff;border-radius:20px;padding:24px 26px;margin-bottom:22px;box-shadow:var(--shadow);align-items:center}
-.offer h3{font-size:22px}
-.offer .oamt{font-size:40px;font-weight:800;line-height:1.1;color:var(--gold)}
-.offer .oamt small{font-size:16px;font-weight:700}
-.offer s{font-size:17px;opacity:.7;margin-inline-start:8px}
-.offer .todo{background:rgba(255,255,255,.1);border-color:var(--gold);color:#F1E2B6}
-@media(min-width:800px){.offer{grid-template-columns:1fr auto;padding:28px 34px}}
-
-/* FAQ */
-.faq details{background:#fff;border:1px solid var(--line);border-radius:14px;margin-top:12px;padding:0 20px;box-shadow:0 2px 8px rgba(10,26,60,.06)}
-.faq summary{cursor:pointer;font-weight:800;padding:16px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-size:24px;color:var(--blue);line-height:1}
-.faq details[open] summary::after{content:"\2212"}
-.faq details p{color:var(--muted);padding-bottom:16px}
-
-/* Final */
-.final{background:radial-gradient(700px 400px at 15% 120%,rgba(212,175,90,.15) 0%,transparent 60%),var(--navy);color:#fff;text-align:center}
-.final p{margin:14px auto 26px;color:#C8CEDC;font-size:18px}
-footer{background:#050D22;color:#8E98AE;text-align:center;padding:22px;font-size:14px}
-
-.sticky{position:fixed;inset-inline:0;bottom:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);
-  padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:flex;justify-content:center}
-.sticky .cta{width:100%;max-width:520px}
-
-@media(min-width:800px){
-  section{padding:92px 0}
-  .hero{padding:72px 0 96px}
-  .hero .grid{grid-template-columns:1.05fr .95fr}
-  .strip .wrap{grid-template-columns:repeat(3,1fr)}
-  .strip div{border-bottom:0;border-inline-start:1px solid var(--line);padding:22px 20px}
-  .strip div:first-child{border-inline-start:0}
-  .g2{grid-template-columns:repeat(2,1fr)} .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)}
-  .sides{grid-template-columns:1fr 1fr}
-  .steps{grid-template-columns:repeat(2,1fr)}
-  .price{grid-template-columns:1fr 1.1fr}
-  .sticky{display:none} body{padding-bottom:0}
-}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+:root{--bg:#faf8f2;--surface:#ffffff;--text:#14213a;--muted:#55627a;--line:#e4dfd0;--navy:#0f2340;--navy2:#17325a;--gold:#c9a227;--goldtext:#8a6d0b;--onnavy:#f4efe0;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1628;--surface:#12233f;--text:#eef1f7;--muted:#aab6cc;--line:#26395c;--goldtext:#e0bd4a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0a1628;--surface:#12233f;--text:#eef1f7;--muted:#aab6cc;--line:#26395c;--goldtext:#e0bd4a;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Cairo","Segoe UI",Tahoma,Arial,sans-serif;font-size:17px;line-height:1.85;padding-bottom:84px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+h1,h2,h3{line-height:1.4;margin:0 0 12px;font-weight:800}
+h1{font-size:clamp(28px,6vw,46px)}
+h2{font-size:clamp(23px,4.5vw,32px)}
+h3{font-size:19px}
+p{margin:0 0 12px}
+.muted{color:var(--muted)}
+.btn{display:inline-block;background:var(--gold);color:#1a1405;font-weight:800;font-size:18px;padding:14px 28px;border-radius:12px;text-decoration:none;border:2px solid var(--gold)}
+.btn:hover{background:#d8b33a}
+.btn:focus-visible,summary:focus-visible{outline:3px solid #fff;outline-offset:3px;box-shadow:0 0 0 6px var(--navy)}
+.hero{background:var(--navy);color:var(--onnavy);padding:44px 0 56px}
+.hero .bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:34px}
+.logo-img{height:clamp(84px,20vw,120px);width:auto;display:block}
+.hero-grid{display:grid;gap:32px;align-items:center}
+@media(min-width:860px){.hero-grid{grid-template-columns:1.15fr .85fr}}
+.hero p.sub{font-size:18px;color:#d5d9e4;max-width:56ch}
+.offer-note{margin-top:12px;font-size:15px;color:#cfc7a8}
+.mock{background:var(--navy2);border:1px solid #2c4a78;border-radius:16px;padding:20px}
+.mock h3{font-size:16px;color:var(--gold);margin-bottom:14px}
+.row{margin-bottom:14px;font-size:14px}
+.track{height:12px;background:#0b1a33;border-radius:8px;overflow:hidden;margin-top:4px}
+.fill{height:100%;border-radius:8px}
+.exp{background:#7f93b8}.act{background:var(--gold)}
+.alert{background:#3a2b0a;border:1px solid var(--gold);color:#f3dc8c;border-radius:10px;padding:10px 12px;font-size:14px;margin-top:8px}
+.mock small{display:block;margin-top:12px;color:#9fb0cf;font-size:12px}
+.grid{display:grid;gap:16px}
+@media(min-width:640px){.grid.c2{grid-template-columns:1fr 1fr}.grid.c3{grid-template-columns:1fr 1fr 1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card p{margin:0;color:var(--muted);font-size:16px}
+.pain{border-inline-start:5px solid var(--gold)}
+.feat h3{color:var(--goldtext);font-size:17px;margin-bottom:6px}
+.feat .benefit{color:var(--text);font-weight:600;font-size:17px;margin:0}
+.steps{counter-reset:s;list-style:none;margin:0;padding:0;display:grid;gap:14px}
+@media(min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
+.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 18px 18px 18px;position:relative}
+.steps li::before{content:counter(s);display:inline-flex;width:34px;height:34px;border-radius:50%;background:var(--navy);color:var(--gold);align-items:center;justify-content:center;font-weight:800;margin-bottom:8px}
+.tbl{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:560px;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+th,td{padding:14px 16px;text-align:start;border-bottom:1px solid var(--line);vertical-align:top;font-size:16px}
+th{background:var(--navy);color:var(--onnavy)}
+td.us{background:rgba(201,162,39,.14);font-weight:600}
+tr:last-child td{border-bottom:0}
+.navy{background:var(--navy);color:var(--onnavy)}
+.navy h2{color:#fff}
+.price-main{border:2px solid var(--gold);background:var(--surface)}
+.big{font-size:clamp(34px,7vw,52px);font-weight:800;color:var(--goldtext);line-height:1.2}
+.price-main s{color:var(--muted)}
+.list{margin:12px 0 0;padding-inline-start:20px;color:var(--muted);font-size:16px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:12px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700;padding:16px 18px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--goldtext);font-size:22px;line-height:1}
+details[open] summary::after{content:"−"}
+details p{padding:0 18px 16px;margin:0;color:var(--muted)}
+.final{text-align:center;padding:64px 0}
+.final p{color:#d5d9e4;max-width:54ch;margin-inline:auto}
+footer{padding:24px 0;text-align:center;color:var(--muted);font-size:14px}
+.sticky{position:fixed;inset-inline:0;bottom:0;z-index:20;background:var(--navy);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));border-top:1px solid #2c4a78;text-align:center}
+.sticky .btn{display:block;width:100%;max-width:520px;margin:0 auto;padding:12px 16px}
+@media(min-width:900px){.sticky{display:none}body{padding-bottom:0}}
 </style>
 </head>
 <body>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5M12 13v8"/></symbol>
-  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></symbol>
-  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 20h18M6 16V10M11 16V6M16 16v-4M21 16V8"/></symbol>
-  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6M16 4.5a3.5 3.5 0 0 1 0 7M21.5 20c0-2.8-1.7-4.8-4-5.6"/></symbol>
-  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
-  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-9 5-14 15-14 0 10-5 15-14 15"/><path d="M5 19c2-5 5-8 9-10"/></symbol>
-  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3l10 18H2L12 3z"/><path d="M12 10v5M12 18h.01"/></symbol>
-  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 6h11v10H2zM13 9h5l4 4v3h-9"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
-  <symbol id="i-branch" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2.5"/><circle cx="18" cy="5" r="2.5"/><circle cx="12" cy="19" r="2.5"/><path d="M6 7.5v2c0 2 1 3 3 3h6c2 0 3-1 3-3v-2M12 12.5v4"/></symbol>
-  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
-  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
-  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
-  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
-  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l4.9-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4z" fill="currentColor" stroke="none"/></symbol>
-</svg>
-
-<!-- HERO -->
 <header class="hero">
-  <div class="wrap topbar"><a class="brand" href="#" aria-label="Restova">Restova</a></div>
-  <div class="wrap grid">
-    <div>
-      <span class="badge"><i></i>إدارة مخزون ذكية للمطاعم</span>
-      <h1>اعرف المخزون اللي <span class="hl">المفروض</span> يكون عندك، مقابل اللي عندك <span class="hl">فعلًا</span></h1>
-      <p class="lead">بيربط المخزون بالمشتريات والمبيعات والوصفات والموظفين، ويقارن الاستهلاك الفعلي بالمتوقع. وبالـ <span class="ltr">AI</span> يتوقع مبيعاتك وكميات المخزون اللي هتحتاجها، ويخلّي تجربة عميلك داخل المطعم أسهل.</p>
-      <a class="cta" data-cta="hero" href="https://wa.me/201278975974?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B4%D8%AA%D8%B1%D9%83%20%D9%81%D9%8A%20Restova%20%D9%84%D9%85%D8%B7%D8%B9%D9%85%D9%8A.">
-        <svg><use href="#i-wa"/></svg>ابعت رسالة على واتساب واشترك</a>
-      <p class="micro">رد مباشر على واتساب · عرض لأول 10 مشتركين: 2,000 جنيه · نسخة تجريبية بـ 200 جنيه/شهر بمميزات قليلة</p>
-      <div class="points">
-        <span><svg class="ic"><use href="#i-check"/></svg>إدارة مخزون</span>
-        <span><svg class="ic"><use href="#i-check"/></svg>توقع مبيعات بالـ AI</span>
-        <span><svg class="ic"><use href="#i-check"/></svg>تجربة عميل أوضح</span>
+  <div class="wrap">
+    <div class="bar"><img class="logo-img" src="data:image/png;base64,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" alt="Restova" width="207" height="139"></div>
+    <div class="hero-grid">
+      <div>
+        <h1>مخزون المطعم بيتسرق ويتلف ويتهدر؟ Restova تكشفلك الخسارة قبل ما تكبر</h1>
+        <p class="sub">Restova بتربط الـ inventory بالمبيعات والمشتريات والوصفات والموظفين، وبتقارن الاستهلاك الفعلي بالمتوقع عشان تعرف الخسارة فين وإمتى.</p>
+        <a class="btn" href="https://wa.me/201278975974?text=عايز%20أعرف%20عن%20Restova%20لمطعمي">ابعت Message على واتس</a>
+        <p class="offer-note">أول 3 شهور بـ 1000 جنيه في الشهر</p>
       </div>
-    </div>
-    <div>
-      <div class="dash" role="img" aria-label="رسم توضيحي للوحة تحكم المخزون">
-        <div class="bar"><i></i><i></i><i></i><b>Dashboard</b></div>
-        <div class="body">
-          <div class="kpis">
-            <div class="kpi">المخزون<strong>محدّث تلقائيًا</strong></div>
-            <div class="kpi">توقع الطلب<strong>AI Forecast</strong></div>
-            <div class="kpi warn">تنبيهات<strong>عملية غير معتادة</strong></div>
-          </div>
-          <div class="chart">
-            <h4>المتوقع vs الفعلي <span class="legend"><span><i style="background:var(--navy2)"></i>متوقع</span><span><i style="background:var(--gold)"></i>فعلي</span></span></h4>
-            <div class="bars">
-              <div><span style="height:60%;background:var(--navy2)"></span><span style="height:58%;background:var(--gold)"></span></div>
-              <div><span style="height:75%;background:var(--navy2)"></span><span style="height:78%;background:var(--gold)"></span></div>
-              <div><span style="height:50%;background:var(--navy2)"></span><span style="height:92%;background:var(--red)"></span></div>
-              <div><span style="height:68%;background:var(--navy2)"></span><span style="height:66%;background:var(--gold)"></span></div>
-              <div><span style="height:55%;background:var(--navy2)"></span><span style="height:54%;background:var(--gold)"></span></div>
-            </div>
-          </div>
-          <div class="alert"><svg class="ic"><use href="#i-alert"/></svg>فرق غير مبرر بين المتوقع والفعلي</div>
-        </div>
+      <div class="mock" aria-label="شكل توضيحي للمقارنة بين الاستهلاك الفعلي والمتوقع">
+        <h3>الاستهلاك الفعلي vs المتوقع</h3>
+        <div class="row">مادة خام أ<div class="track"><div class="fill exp" style="width:60%"></div></div><div class="track"><div class="fill act" style="width:60%"></div></div></div>
+        <div class="row">مادة خام ب<div class="track"><div class="fill exp" style="width:45%"></div></div><div class="track"><div class="fill act" style="width:82%"></div></div></div>
+        <div class="alert">نشاط غير معتاد على مادة خام ب: الفعلي أعلى من المتوقع</div>
+        <small>رسم توضيحي لشكل السيستم، مش بيانات حقيقية.</small>
       </div>
-      <p class="note-ill">رسم توضيحي (Illustration) — استبدله بلقطة شاشة حقيقية من النظام</p>
     </div>
   </div>
 </header>
 
-<div class="strip"><div class="wrap">
-  <div><svg class="ic"><use href="#i-box"/></svg>إدارة مخزون</div>
-  <div><svg class="ic"><use href="#i-chart"/></svg>توقع المبيعات وكميات المخزون بالـ AI</div>
-  <div><svg class="ic"><use href="#i-users"/></svg>تطوير تجربة العميل داخل المطعم</div>
-</div></div>
-
-<!-- PROBLEM -->
-<section class="pain">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>مخزونك بيقل... ومش عارف ليه؟</h2>
-      <p>بتشتري، وبتبيع، وبتعدّ المخزون، والأرقام مش بتتطابق. هدر؟ صرف مش مسجّل؟ سرقة؟ ولا مورد وصّل أقل من المطلوب؟</p>
-    </div>
-    <div class="grid-c g4">
-      <div class="card"><div class="ico"><svg class="ic"><use href="#i-clock"/></svg></div><p>مواد بتنتهي صلاحيتها قبل ما تتستخدم.</p></div>
-      <div class="card"><div class="ico"><svg class="ic"><use href="#i-alert"/></svg></div><p>كميات بتخرج من المخزن من غير تفسير واضح.</p></div>
-      <div class="card"><div class="ico"><svg class="ic"><use href="#i-search"/></svg></div><p>مش قادر تعرف مين عدّل إيه، وإمتى.</p></div>
-      <div class="card"><div class="ico"><svg class="ic"><use href="#i-chart"/></svg></div><p>بتشتري "بالتخمين": مرة زيادة ومرة ناقص.</p></div>
-    </div>
-    <p class="closing">وكل يوم من غير رقابة واضحة، الخسارة بتكمل.</p>
-  </div>
-</section>
-
-<!-- SOLUTION -->
 <section>
   <div class="wrap">
-    <div class="sec-head">
-      <h2>نظام واحد: يحمي المخزون ويسهّل على العميل</h2>
-      <p><span class="ltr">Restova</span> مش بس بيعرّفك عندك إيه في المخزن، لكن بيحمي مخزونك ويقلل تكاليفك ويحسّن أرباحك.</p>
-    </div>
-    <div class="sides">
-      <div class="side mgmt">
-        <h3>إدارة المطعم والمخزون</h3>
-        <ul>
-          <li><svg class="ic"><use href="#i-check"/></svg><span>مقارنة الاستهلاك الفعلي بالمتوقع حسب الوصفات</span></li>
-          <li><svg class="ic"><use href="#i-check"/></svg><span>رصد الأنشطة غير الطبيعية وتنبيهات فورية</span></li>
-          <li><svg class="ic"><use href="#i-check"/></svg><span>صلاحيات لكل موظف و<span class="ltr">Audit Trail</span> لكل العمليات</span></li>
-          <li><svg class="ic"><use href="#i-check"/></svg><span>توقع المبيعات وكميات المخزون المطلوبة والهالك بالـ <span class="ltr">AI</span></span></li>
-        </ul>
-      </div>
-      <div class="side">
-        <h3>واجهة العميل</h3>
-        <ul>
-          <li><svg class="ic"><use href="#i-check"/></svg><span>حجز طاولة وتأكيد التفاصيل</span></li>
-          <li><svg class="ic"><use href="#i-check"/></svg><span>منيو إلكتروني بالصور والأسعار والمكونات والسعرات</span></li>
-          <li><svg class="ic"><use href="#i-check"/></svg><span>فلتر حسب مسببات الحساسية والنظام الغذائي</span></li>
-        </ul>
-        <div class="chips" aria-label="أمثلة فلاتر">
-          <span class="chip on">Gluten-Free</span><span class="chip">Vegan</span><span class="chip">Low Carb</span><span class="chip">High Protein</span><span class="chip">Dairy-Free</span>
-        </div>
-      </div>
+    <h2>الفلوس بتطلع من المخزون وإنت مش شايفها</h2>
+    <p class="muted">الخسارة في الطريقة التقليدية مش بتبان غير بعد ما تحصل.</p>
+    <div class="grid c2" style="margin-top:20px">
+      <div class="card pain"><h3>سرقة</h3><p>مواد خام بتتسحب، ومحدش عارف مين ولا إمتى.</p></div>
+      <div class="card pain"><h3>تلف</h3><p>أكل بيبوظ قبل ما يتباع.</p></div>
+      <div class="card pain"><h3>هدر</h3><p>هدر في المطبخ بيتحسب عليك من غير ما تحس.</p></div>
+      <div class="card pain"><h3>موظف زيادة للرقابة</h3><p>بتوظف حد يراقب، فتزيد تكلفة جديدة على المطعم.</p></div>
     </div>
   </div>
 </section>
 
-<!-- AI -->
-<section style="background:var(--sky)">
+<section style="background:var(--surface)">
   <div class="wrap">
-    <div class="sec-head">
-      <h2>الـ <span class="ltr">AI</span> في <span class="ltr">Restova</span> بيتوقع حاجتين: المبيعات، وكميات المخزون</h2>
+    <h2>Restova: system ذكي بيكشف الخسائر وبيساعدك تتحكم فيها</h2>
+    <p>منصة ذكية ومتكاملة لإدارة المطاعم والكافيهات. بتستخدم الذكاء الاصطناعي والكاميرات الذكية عشان تتابع حركة المواد الخام، وتنبّهك لأي نشاط غير معتاد، وتتوقع الاحتياج والهدر قبل ما يتحولوا لخسارة فلوس. وبتديرلك كل فروعك من مكان واحد (SaaS).</p>
+    <div class="grid c3" style="margin-top:22px">
+      <div class="card feat"><h3>ربط المخزون بالمبيعات والوصفات</h3><p class="benefit">تعرف كل خامة راحت في أنهي طبق.</p></div>
+      <div class="card feat"><h3>مقارنة الفعلي بالمتوقع</h3><p class="benefit">أي فرق بيبان بدل ما يضيع في الدفاتر.</p></div>
+      <div class="card feat"><h3>كاميرات ذكية وذكاء اصطناعي</h3><p class="benefit">تنبيه لأي نشاط غير معتاد على المواد الخام.</p></div>
+      <div class="card feat"><h3>توقّع الاحتياج والهدر</h3><p class="benefit">تقرر قبل ما الخسارة تحصل.</p></div>
+      <div class="card feat"><h3>ربط المشتريات والموظفين</h3><p class="benefit">رقابة أوضح من غير ما تتابع كل حاجة بنفسك.</p></div>
+      <div class="card feat"><h3>كل الفروع في مكان واحد</h3><p class="benefit">تقارير ذكية تساعدك تاخد قرارات أحسن.</p></div>
     </div>
-    <div class="grid-c g2">
-      <div class="card"><div class="ico"><svg class="ic"><use href="#i-chart"/></svg></div><h3>توقع المبيعات</h3>
-        <p>بيتوقع مبيعاتك من المبيعات السابقة والمواسم وأيام الأسبوع.</p></div>
-      <div class="card"><div class="ico"><svg class="ic"><use href="#i-box"/></svg></div><h3>توقع كميات المخزون</h3>
-        <p>بيتوقع احتياجات المطعم من المواد الغذائية، ويقترح كميات الشراء المناسبة، ويتنبأ بالمواد المعرّضة لانتهاء الصلاحية حسب تاريخ الصلاحية والكميات المتبقية ومعدلات الاستهلاك.</p></div>
-    </div>
-    <p style="margin-top:22px;font-weight:800;font-size:18px">النتيجة: تشتري بتوقعات مبنية على بيانات، مش تخمين، وتقلل التخزين الزائد واحتمال انتهاء الصلاحية.</p>
+    <p class="muted" style="margin-top:20px">ولعملاءك كمان: حجز طاولات، تصفح المنيو، معرفة المكونات والسعرات الحرارية ومسببات الحساسية، وطلب أونلاين.</p>
   </div>
 </section>
 
-<!-- FEATURES -->
-<section style="background:#fff">
-  <div class="wrap">
-    <div class="sec-head"><h2>كل ميزة ليها فايدة واضحة</h2></div>
-    <div class="grid-c g3">
-      <div class="card"><div class="ico"><svg class="ic"><use href="#i-box"/></svg></div><h3>Smart Inventory</h3><p>المخزون بيتحدّث تلقائيًا مع الشراء والاستلام والصرف والبيع، من غير جرد يدوي كل مرة.</p></div>
-      <div class="card"><div class="ico"><svg class="ic"><use href="#i-chart"/></svg></div><h3>AI Forecasting</h3><p>توقع مبيعاتك وكميات المخزون اللي محتاجها من المبيعات السابقة والمواسم وأيام الأسبوع، واقتراح كميات الشراء.</p></div>
-      <div class="card"><div class="ico"><svg class="ic"><use href="#i-shield"/></svg></div><h3>Security &amp; Audit Trail</h3><p>كل عملية دخول وتعديل وصرف واستلام مسجّلة، ومفيش تعديل من غير صلاحية.</p></div>
-      <div class="card"><div class="ico"><svg class="ic"><use href="#i-search"/></svg></div><h3>Recipe-Based Tracking</h3><p>تقارن اللي اتباع باللي اتصرف فعلًا، وتكتشف الهدر أو الصرف غير المبرر.</p></div>
-      <div class="card"><div class="ico"><svg class="ic"><use href="#i-clock"/></svg></div><h3>Expiry &amp; Waste Prediction</h3><p>تعرف المواد المعرّضة تنتهي قبل ما تنتهي، مع اقتراحات تقلل الهالك.</p></div>
-      <div class="card"><div class="ico"><svg class="ic"><use href="#i-eye"/></svg></div><h3>Employee Analytics</h3><p>تكتشف أنماط غير طبيعية مرتبطة بموظفين أو ورديات.</p></div>
-      <div class="card"><div class="ico"><svg class="ic"><use href="#i-truck"/></svg></div><h3>Supplier Verification</h3><p>مقارنة المطلوب بالمستلم وبالفاتورة، واكتشاف الاختلافات المتكررة.</p></div>
-      <div class="card"><div class="ico"><svg class="ic"><use href="#i-branch"/></svg></div><h3>Multi-Branch</h3><p>مخزون كل الفروع في نظام مركزي، واقتراح نقل مواد بين الفروع.</p></div>
-      <div class="card"><div class="ico"><svg class="ic"><use href="#i-leaf"/></svg></div><h3>Allergen &amp; Diet Filters</h3><p>العميل يفلتر الوجبات حسب الحساسية أو نظامه الغذائي، والمنيو بيعرض المتاح فعلًا.</p></div>
-    </div>
-    <details class="all">
-      <summary>باقي المميزات والتفاصيل</summary>
-      <div class="tw"><table>
-        <tr><th>الميزة</th><th>الفايدة ليك</th></tr>
-        <tr><td><span class="ltr">JIT Inventory</span></td><td>تخزين زائد أقل، تكلفة تخزين أقل، واحتمال أقل لانتهاء الصلاحية.</td></tr>
-        <tr><td><span class="ltr">AI Loss Investigation</span></td><td>تقارير وتوصيات تربط المخزون بالمبيعات والموظفين والهالك والمشتريات.</td></tr>
-        <tr><td><span class="ltr">Table Reservation</span></td><td>حجز أسهل لعميلك بتفاصيل مؤكدة.</td></tr>
-        <tr><td><span class="ltr">Digital Menu</span></td><td>منيو واضح بالصور والأسعار والمكونات والسعرات والبروتين والدهون والكربوهيدرات.</td></tr>
-        <tr><td><span class="ltr">Meal Availability</span></td><td>المنيو يحدّث حالة الوجبة لما مكوّن أساسي يخلص.</td></tr>
-      </table></div>
-    </details>
-  </div>
-</section>
-
-<!-- STEPS -->
 <section>
   <div class="wrap">
-    <div class="sec-head"><h2>إزاي تبدأ</h2></div>
-    <ol class="steps">
-      <li><h3>ابعت رسالة على واتساب</h3><p>قولنا إنك عايز تشترك.</p></li>
-      <li><h3>اشترك</h3><p>اشتراك شهري في <span class="ltr">Restova</span>.</p></li>
-      <li><h3>سجّل المخزون والوصفات</h3><p>وابدأ تتابع الشراء والصرف والمبيعات.</p>
-        <span class="todo">[محتاج معلومة من صاحب البزنس: مدة التجهيز، ومين بيعمل الإدخال، وهل فيه استيراد بيانات من السيستم الحالي]</span></li>
-      <li><h3>تابع التقارير والتنبيهات</h3><p>وخد قراراتك على أرقام.</p></li>
+    <h2>مش فاهم السيستم؟ هو بيشتغل في 4 خطوات</h2>
+    <ol class="steps" style="margin-top:20px">
+      <li><h3>تبعتلنا على واتس</h3><p class="muted">وتحكيلنا عن مطعمك أو كافيهك.</p></li>
+      <li><h3>Restova تربط</h3><p class="muted">المخزون والمبيعات والمشتريات والوصفات والموظفين.</p></li>
+      <li><h3>السيستم يقارن</h3><p class="muted">الاستهلاك الفعلي بالمتوقع وينبّهك لأي نشاط غير معتاد.</p></li>
+      <li><h3>تاخد قرارك</h3><p class="muted">من تقارير ذكية بتبيّن لك الخسارة فين.</p></li>
     </ol>
   </div>
 </section>
 
-<!-- COMPARE -->
-<section style="background:#fff">
+<section style="background:var(--surface)">
   <div class="wrap">
-    <div class="sec-head"><h2>عندك سيستم بالفعل؟ كويس. اسأل نفسك: سيستمك بيعمل ده؟</h2></div>
-    <div class="cmp"><div class="tw"><table>
-      <tr><th></th><th><span class="ltr">Restova</span></th><th>سيستم المخزون الحالي</th></tr>
-      <tr><td>توقع المبيعات وكميات المخزون بالـ <span class="ltr">AI</span></td><td class="yes">✔</td><td class="q">اسأل نفسك</td></tr>
-      <tr><td>مقارنة الاستهلاك الفعلي بالمتوقع حسب الوصفة</td><td class="yes">✔</td><td class="q">اسأل نفسك</td></tr>
-      <tr><td>رصد الأنشطة غير المعتادة وتنبيهات</td><td class="yes">✔</td><td class="q">اسأل نفسك</td></tr>
-      <tr><td>تجربة العميل: حجز، منيو، مكونات، حساسية</td><td class="yes">✔</td><td class="q">اسأل نفسك</td></tr>
-      <tr><td>كل ده في منصة واحدة</td><td class="yes">✔</td><td class="q">—</td></tr>
-    </table></div></div>
-    <div class="diff">الفرق: <strong>توقع المبيعات وكميات المخزون بالـ <span class="ltr">AI</span> + تحسين تجربة العميل داخل المطعم</strong>، مع حماية المخزون في نفس المكان.</div>
+    <h2>ليه Restova مش الطرق اللي ماشي بيها دلوقتي؟</h2>
+    <div class="tbl" style="margin-top:18px">
+      <table>
+        <thead><tr><th>اللي بتستخدمه دلوقتي</th><th>الوضع</th><th>مع Restova</th></tr></thead>
+        <tbody>
+          <tr><td>موظفين زيادة للرقابة</td><td>تكلفة إضافية، والرقابة معتمدة على أشخاص</td><td class="us">سيستم بيراقب ويقارن وينبّه، من غير ما تضطر تزوّد موظفين للرقابة</td></tr>
+          <tr><td>برامج إدارة مخزون أجنبية</td><td>برامج عامة مش مصممة لمطعمك</td><td class="us">منصة مخصصة للمطاعم والكافيهات، من غير تكاليف عالية</td></tr>
+          <tr><td>الطريقة التقليدية</td><td>الخسارة مش بتبان غير بعد ما تحصل</td><td class="us">مقارنة الفعلي بالمتوقع قبل ما الخسارة تكبر</td></tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </section>
 
-<!-- Social proof removed: no real proof in brief. Add only real reviews/videos/numbers with permission. -->
-
-<!-- PRICING -->
 <section>
   <div class="wrap">
-    <div class="sec-head"><h2>اشتراك واضح، شهري</h2></div>
-    <div class="offer">
-      <div>
-        <h3>عرض خاص لأول 10 مشتركين</h3>
-        <p>اشترك مع Restova من خلال أول 10 مشتركين بسعر مخفّض.</p>
-        <span class="todo">[محتاج تأكيد: هل 2,000 جنيه للشهر الأول بس ولا مستمر؟ وهل العرض على الاشتراك الكامل؟ وإيه آخر ميعاد؟]</span>
+    <h2>ابدأ بـ 1000 جنيه في الشهر لأول 3 شهور</h2>
+    <div class="grid c2" style="margin-top:20px">
+      <div class="card price-main">
+        <h3>الاشتراك الشهري</h3>
+        <div class="big">1000 جنيه / شهر</div>
+        <p>لأول 3 شهور بدل <s>3000</s>. يعني 3 شهور بسعر شهر واحد من السعر العادي. بعدها 3000 جنيه في الشهر.</p>
+        <a class="btn" href="https://wa.me/201278975974?text=عايز%20أعرف%20عن%20Restova%20لمطعمي" style="margin-top:8px">ابعت Message على واتس</a>
       </div>
-      <div><div class="oamt">2,000 <small>جنيه</small><s>15,000</s></div></div>
-    </div>
-    <div class="price">
-      <div class="plan">
-        <h3>النسخة التجريبية</h3>
-        <div class="amt">200 <small>جنيه / شهر</small></div>
-        <ul>
-          <li><svg class="ic"><use href="#i-check"/></svg><span>ابدأ وجرّب النظام</span></li>
-          <li><svg class="ic"><use href="#i-check"/></svg><span>مميزات قليلة (مش كل مميزات النظام)</span></li>
+      <div class="card">
+        <h3>الباقة الأسبوعية</h3>
+        <div class="big" style="font-size:34px">900 جنيه / أسبوع</div>
+        <p>مدة الاشتراك أسبوع. مناسبة للتجربة القصيرة، والاشتراك الشهري هو الأوفر.</p>
+        <ul class="list">
+          <li>الدعم بيشمل إصلاح أي مشاكل على السيستم.</li>
+          <li>تغيير أو إضافة فيتشرز بعد التسليم مش داخلة في الدعم.</li>
+          <li>قبل ما تستلم المنتج نقدر نعمل فيتشرز مخصوصة (Customized) لمطعمك.</li>
+          <li>فيه خدمة ما بعد البيع (After-sale service).</li>
         </ul>
-        <span class="todo">[محتاج معلومة: إيه بالظبط المميزات اللي في نسخة الـ 200 جنيه، وهل لها مدة محددة]</span>
-      </div>
-      <div class="plan full">
-        <span class="tag">الاشتراك الكامل</span>
-        <h3>كل المميزات</h3>
-        <div class="amt">15,000 <small>جنيه / شهر</small></div>
-        <ul>
-          <li><svg class="ic"><use href="#i-check"/></svg><span>إدارة المخزون وتوقع المبيعات وكميات المخزون بالـ <span class="ltr">AI</span></span></li>
-          <li><svg class="ic"><use href="#i-check"/></svg><span>الأمان والصلاحيات وتتبع الاستهلاك حسب الوصفة</span></li>
-          <li><svg class="ic"><use href="#i-check"/></svg><span>توقع الهالك وتقارير الخسائر</span></li>
-          <li><svg class="ic"><use href="#i-check"/></svg><span>واجهة العميل: حجز، منيو، حساسية</span></li>
-          <li><svg class="ic"><use href="#i-check"/></svg><span>خدمة ما بعد البيع</span></li>
-        </ul>
-        <div style="margin-top:22px"><a class="cta" data-cta="pricing" href="https://wa.me/201278975974"><svg><use href="#i-wa"/></svg>ابعت رسالة على واتساب واشترك</a></div>
       </div>
     </div>
-    <p class="perday">قارن السعر بالخسارة: 15,000 جنيه في الشهر تعادل حوالي 500 جنيه في اليوم. كام بتخسر يوميًا في هدر وسرقة وصرف غير مبرر؟</p>
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="faq" style="background:#fff">
-  <div class="wrap" style="max-width:820px">
-    <div class="sec-head"><h2>أسئلة شائعة</h2></div>
-    <details open><summary>عندي سيستم بالفعل، ليه أغيّره؟</summary>
-      <p><span class="ltr">Restova</span> بيضيف توقع المبيعات وكميات المخزون بالـ <span class="ltr">AI</span>، ومقارنة الاستهلاك الفعلي بالمتوقع حسب الوصفات، وتجربة العميل داخل المطعم. لو سيستمك الحالي مش بيعمل ده، ده الفرق. <span class="todo">[محتاج معلومة: هل ينفع يشتغل جنب السيستم الحالي أو ننقل منه بيانات؟]</span></p></details>
-    <details><summary>هل النظام بيمنع السرقة؟</summary>
-      <p>بيسجّل كل عمليات الدخول والتعديل والصرف والاستلام في <span class="ltr">Audit Trail</span>، وبيحدد صلاحيات كل موظف، وبيبعتلك تنبيهات عند العمليات غير المعتادة، فبيكشف ويرصد ويمنع التعديلات غير المصرّح بها. النتائج بتختلف من مطعم لمطعم.</p></details>
-    <details><summary>إيه اللي بيتنبأ بيه الـ AI؟</summary>
-      <p>حاجتين: <strong>المبيعات</strong>، و<strong>كميات المخزون</strong> اللي المطعم هيحتاجها من المواد الغذائية، بناءً على المبيعات السابقة والمواسم وأيام الأسبوع، مع اقتراح كميات الشراء. وكمان بيتنبأ بالمواد المعرّضة لانتهاء الصلاحية قبل ما تنتهي.</p></details>
-    <details><summary>عميلي هيستفيد إيه؟</summary>
-      <p>يحجز طاولة، يتصفح المنيو، يشوف المكونات والسعرات والبروتين والدهون والكربوهيدرات، ويفلتر الأكل حسب الحساسية أو النظام الغذائي. والمنيو بيعرض الوجبات المتاحة حاليًا حسب المخزون.</p></details>
-    <details><summary>السعر كام؟ وفيه نسخة أرخص أجرّب بيها؟</summary>
-      <p>الاشتراك الكامل 15,000 جنيه شهريًا. وفيه نسخة بـ 200 جنيه شهريًا بمميزات قليلة. وفيه عرض لأول 10 مشتركين: 2,000 جنيه. <span class="todo">[محتاج معلومة: تفاصيل النسخة التجريبية]</span></p></details>
-    <details><summary>ينفع لو عندي أكتر من فرع؟</summary>
-      <p>أيوه، النظام بيدير مخزون كل الفروع مركزيًا ويقترح نقل مواد بين الفروع لتقليل النقص والهدر.</p></details>
-    <details><summary>فيه دعم بعد الاشتراك؟</summary>
-      <p>أيوه، فيه خدمة ما بعد البيع. <span class="todo">[محتاج معلومة: قنوات ومواعيد الدعم]</span></p></details>
-    <details><summary>أبدأ إزاي، وياخد وقت قد إيه؟</summary>
-      <p>ابعت رسالة على واتساب وهنكمل معاك. <span class="todo">[محتاج معلومة: مدة التجهيز والتدريب، والمطلوب من المطعم]</span></p></details>
-  </div>
-</section>
-
-<!-- FINAL CTA -->
-<section class="final">
+<section style="background:var(--surface)">
   <div class="wrap">
-    <h2>كفاية تخمين في المخزون</h2>
-    <p>اعرف الهدر والسرقة بالأرقام، وتوقّع احتياجاتك بالـ <span class="ltr">AI</span>، وقدّم لعميلك تجربة أوضح داخل المطعم، كله مع <span class="ltr">Restova</span>.</p>
-    <a class="cta" data-cta="final" href="https://wa.me/201278975974?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B4%D8%AA%D8%B1%D9%83%20%D9%81%D9%8A%20Restova%20%D9%84%D9%85%D8%B7%D8%B9%D9%85%D9%8A."><svg><use href="#i-wa"/></svg>ابعت رسالة على واتساب واشترك</a>
-    <p class="micro">رد مباشر على واتساب · عرض لأول 10 مشتركين: 2,000 جنيه · خدمة ما بعد البيع</p>
+    <h2>أسئلة بتتسأل كتير</h2>
+    <div style="margin-top:18px">
+      <details open><summary>مش فاهم السيستم، هعرف أستخدمه؟</summary><p>السيستم بيشتغل في 4 خطوات بسيطة: يربط المخزون بالمبيعات والوصفات، يقارن الفعلي بالمتوقع، ينبّهك بأي نشاط غير معتاد، ويديك تقرير تقرر منه.</p></details>
+      <details open><summary>أنا متعود على الطريقة التقليدية، ليه أغيّر؟</summary><p>لأن الخسارة في الطريقة التقليدية مش بتبان غير بعد ما تحصل. Restova بتقارن الاستهلاك الفعلي بالمتوقع وتنبّهك قبل ما تكبر.</p></details>
+      <details><summary>السعر كام؟</summary><p>3000 جنيه في الشهر، والعرض 1000 جنيه في الشهر لأول 3 شهور.</p></details>
+      <details><summary>فيه باقات أسبوعية؟</summary><p>أيوه، فيه باقة أسبوعية بـ 900 جنيه في الأسبوع، مناسبة للتجربة القصيرة، والاشتراك الشهري هو الأوفر.</p></details>
+      <details><summary>عندي أكتر من فرع، هينفع؟</summary><p>أيوه، Restova بتديرلك كل فروعك من مكان واحد.</p></details>
+      <details><summary>لو حصلت مشكلة بعد الاشتراك؟</summary><p>فيه خدمة ما بعد البيع، وبتشمل إصلاح أي مشاكل على السيستم. تغيير أو إضافة فيتشرز بعد التسليم مش داخلة في الدعم، لكن قبل التسليم نقدر نعمل فيتشرز مخصوصة (Customized) لمطعمك.</p></details>
+      <details><summary>Restova للمخزون بس؟</summary><p>لا، كمان بتقدم تجربة رقمية للعملاء: حجز طاولات، تصفح المنيو، معرفة المكونات والسعرات ومسببات الحساسية، والطلب أونلاين.</p></details>
+    </div>
   </div>
 </section>
-<footer><a class="brand" href="#" aria-label="Restova">Restova</a><div>© Restova</div></footer>
 
-<div class="sticky"><a class="cta" data-cta="sticky" href="https://wa.me/201278975974"><svg><use href="#i-wa"/></svg>ابعت رسالة على واتساب واشترك</a></div>
+<section class="navy final">
+  <div class="wrap">
+    <h2>اعرف فلوسك راحت فين</h2>
+    <p>Restova بتكشف السرقة والتلف والهدر في مخزونك، وبتبدأ بـ 1000 جنيه في الشهر لأول 3 شهور.</p>
+    <a class="btn" href="https://wa.me/201278975974?text=عايز%20أعرف%20عن%20Restova%20لمطعمي">ابعت Message على واتس</a>
+  </div>
+</section>
 
-<script>
-// استبدل رقم واتساب مرة واحدة هنا (صيغة دولية بدون + أو أصفار)
-var WA_NUMBER = "201278975974";
-document.querySelectorAll('a[href*="wa.me/"]').forEach(function(a){
-  a.href = a.href.replace("201278975974", WA_NUMBER);
-  a.addEventListener("click", function(){
-    try{ if(window.fbq) fbq("track","Contact",{source:a.dataset.cta}); }catch(e){}
-    try{ if(window.gtag) gtag("event","whatsapp_click",{cta_position:a.dataset.cta}); }catch(e){}
-  });
-});
-</script>
+<footer><div class="wrap">Restova</div></footer>
+
+<div class="sticky"><a class="btn" href="https://wa.me/201278975974?text=عايز%20أعرف%20عن%20Restova%20لمطعمي">ابعت Message على واتس</a></div>
+
 </body>
 </html>
